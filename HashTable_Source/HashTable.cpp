@@ -17,7 +17,7 @@ HashTable::HashTable()
 	}
 }
 
-/*static Item HashTable::getItem(string Name)
+HashTable::getItem(string Name)
 {
 	Item* item = Table[Hash(Name)];
 	while (item->name != Name)
@@ -27,7 +27,7 @@ HashTable::HashTable()
 	
 	return item;
 
-}*/
+}
 
 void HashTable::printTable()
 {
