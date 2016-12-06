@@ -17,8 +17,15 @@ int main()
 	ht.addItem("Gilfoyl", "Tara");
 	ht.addItem("Gaven", "Gared");
 	ht.addItem("Bighead", "Danesh");
+	
+	string input;
 
-	ht.printTable();
+	cin >> input;
+
+	string* target = ht.get_Item("Marinko");
+	cout << "Order: " + target[1] << endl;
+
+	//ht.printTable();
 	
 	return 0;
 }

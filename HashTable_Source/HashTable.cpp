@@ -17,15 +17,20 @@ HashTable::HashTable()
 	}
 }
 
-HashTable::getItem(string Name)
+string* HashTable::get_Item(string Key)
 {
-	Item* item = Table[Hash(Name)];
-	while (item->name != Name)
+	Item* item = Table[Hash(Key)];
+	while (item->name != Key)
 	{
 		item = item->next;
 	}
 	
-	return item;
+	string* output = new string[2];
+
+	output[0] = item->name;
+	output[1] = item->drink;
+
+	return output;
 
 }
 

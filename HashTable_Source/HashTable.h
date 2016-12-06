@@ -19,6 +19,7 @@ class HashTable
 		void addItem(string Name, string Drink);
 		int NumberOfItems(int index);
 		void printTable();
+		string* get_Item(string Key);
 
 };
 
